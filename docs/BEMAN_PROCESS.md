@@ -13,9 +13,9 @@ This document specifies stages and best practices for Beman Project libraries de
 This is a living document that adapts to evolving best practices and community
 needs. To make changes:
 
-1. Create a [discourse topic](https://discourse.bemanproject.org/latest) detailing the change
+1. Create a [discourse topic](https://discourse.bemanproject.org/latest) detailing the changes
    and how it aligns with the core principles.
-2. After some community discussion, create a PR with the actual change on
+2. After some community discussion, create a PR with the actual changes on
    [GitHub](https://github.com/bemanproject/beman) with a *leads question*
    label. The PR should also link to the discourse topic.
 3. Continue discussions on the PR and discourse topic.
