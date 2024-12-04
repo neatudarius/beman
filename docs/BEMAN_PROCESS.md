@@ -46,3 +46,74 @@ The Beman libraries possible status are:
     * A `BEMAN STABLE` library keeps its status for 2 C++ development cycles. At that point, it is expected that all major compiler vendors will already have a standard conformant implementation, so all users can switch from the Beman library to the Standard Library.
       * e.g., `beman.optional26` is kept until C++26 and C++29 standards are released. We will deprecated `beman.optional26` when the final C++29 Draft is released (e.g. probably in 2029-2030).
 4. `BEMAN DEPRECATED`: Such Beman library was used as an intermediate solution (check `BEMAN STABLE`) and when all major compiler vendors provided an implementation, this library serves no purpose.
+
+## Bemanification
+
+If a new repo needs to be bemanified (apply the [Beman Standard](https://github.com/beman-project/beman/blob/main/docs/BEMAN_STANDARD.md)), it is recommended to create a new issues with next description to track the progress (example - [beman.exemplar issue #14](https://github.com/bemanproject/exemplar/issues/14)).
+
+Please update the template in this document if outdated! Use the following style:
+
+```mardkdown
+Apply the [Beman Standard](https://github.com/beman-project/beman/blob/main/docs/BEMAN_STANDARD.md).
+
+...
+
+# Updates tracker
+## License
+- [ ] LICENSE.APPROVED
+- [ ] LICENSE.APACHE_LLVM
+- [ ] LICENSE.CRITERIA
+ 
+## General
+
+- [ ] LIBRARY.NAMES
+- [ ] REPOSITORY.NAME
+- [ ] REPOSITORY.CODEOWNERS
+
+## Top-level
+
+- [ ] TOPLEVEL.CMAKE
+- [ ] TOPLEVEL.LICENSE
+- [ ] TOPLEVEL.README
+
+## README.md
+
+- [ ] README.TITLE
+- [ ] README.PURPOSE
+- [ ] README.IMPLEMENTS
+- [ ] README.LIBRARY_STATUS
+
+## CMake
+
+- [ ] CMAKE.DEFAULT
+- [ ] CMAKE.PROJECT_NAME
+- [ ] CMAKE.LIBRARY_NAME
+- [ ] CMAKE.LIBRARY_ALIAS
+- [ ] CMAKE.TARGET_NAMES
+- [ ] CMAKE.CONFIG
+- [ ] CMAKE.SKIP_TESTS
+- [ ] CMAKE.SKIP_EXAMPLES
+- [ ] CMAKE.AVOID_PASSTHROUGHS
+
+## Directory Layout
+
+- [ ] DIRECTORY.INTERFACE_HEADERS
+- [ ] DIRECTORY.IMPLEMENTATION_HEADERS
+- [ ] DIRECTORY.SOURCES
+- [ ] DIRECTORY.TESTS
+- [ ] DIRECTORY.EXAMPLES
+- [ ] DIRECTORY.DOCS
+- [ ] DIRECTORY.PAPERS
+
+## File contents
+
+- [ ] FILE.NAME
+- [ ] FILE.TEST_NAMES
+- [ ] FILE.LICENSE_ID
+- [ ] FILE.COPYRIGHT
+
+## C++
+
+- [ ] CPP.NAMESPACE
+
+```
