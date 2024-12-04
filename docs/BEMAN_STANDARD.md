@@ -5,8 +5,7 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 # The Beman Standard
 
 This document specifies rules and recommendations for Beman project libraries.
-Its goal is to create consistency facilitating the evaluation of, and
-contribution to Beman libraries.
+Its goal is to create consistency facilitating the evaluation of, and contribution to Beman libraries.
 
 ## Introduction
 
@@ -120,7 +119,7 @@ Examples:
 # beman.sender_receiver: Scalable Asychronous Program Building Blocks
 ```
 
-**[README.PURPOSE]** REQUIREMENT: Following the title, the `README.md` must contain a one- or two-paragraph summary describing the library's purpose.
+**[README.PURPOSE]** REQUIREMENT: Following the title, the `README.md` must contain a one or two-paragraph summary describing the library's purpose.
 
 **[README.IMPLEMENTS]** REQUIREMENT: Following the purpose and a newline, the `README.md` must indicate which papers the repository implements. Use the following style:
 
