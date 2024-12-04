@@ -31,7 +31,7 @@ This standard is driven by four core principles:
 This is a living document that adapts to evolving best practices and community
 needs. To make changes:
 
-1. Create a [discourse topic](https://discourse.boost.org) detailing the change
+1. Create a [discourse topic](https://discourse.bemanproject.org/latest) detailing the change
    and how it aligns with the core principles.
 2. After some community discussion, create a PR with the actual change on
    [GitHub](https://github.com/bemanproject/beman) with a *leads question*
