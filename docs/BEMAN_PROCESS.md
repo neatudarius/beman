@@ -15,10 +15,10 @@ This is a living document that adapts to evolving best practices and community
 needs. To make changes:
 
 1. Create a [discourse topic](https://discourse.bemanproject.org/latest) detailing the changes
-   and how it aligns with the core principles.
+and how it aligns with the core principles.
 2. After some community discussion, create a PR with the actual changes on
-   [GitHub](https://github.com/bemanproject/beman) with the `!!! Beman leads required !!!`
-   label. The PR should also link to the discourse topic.
+[GitHub](https://github.com/bemanproject/beman) with the `!!! Beman leads required !!!`
+label. The PR should also link to the discourse topic.
 3. Continue discussions on the PR and discourse topic.
 4. Await a leads a decision based on the community feedback.
 
@@ -45,5 +45,5 @@ The possible status for a Beman library could be:
     * The code is production ready.
     * Only bugfixes expected at this stage. Any other addition to the same utility (e.g., adding another C++29 std::optional extension on top of C++26 std::optional) would be done into a new Beman library / repo.
     * A `BEMAN STABLE` library keeps its status for 2 C++ development cycles. At that point, it is expected that all major compiler vendors will already have a standard conformant implementation, so all users can switch from the Beman library to the Standard Library.
-      * e.g., `beman.optional26` is kept until C++26 and C++29 standards are released. We will deprecated `beman.optional26` when the final C++29 Draft is released (e.g. probably in 2029-2030).
+      * e.g., `beman.optional26` is kept until C++26 and C++29 standards are released. We will deprecate `beman.optional26` when the final C++29 Draft is released (e.g. probably in 2029-2030).
 4. `BEMAN DEPRECATED`: Such Beman library was used as an intermediate solution (check `BEMAN STABLE`) and when all major compiler vendors provided an implementation, this library serves no purpose.
