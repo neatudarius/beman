@@ -135,10 +135,10 @@ or, if this is an early idea implementation and no paper available:
 **Implements:**  N/A
 ```
 
-**[README.LIBRARY_STATUS]** REQUIREMENT: Following the implements section and a newline, the `README.md` must indicate the library status. Check [BEMAN_PROCESS.md#library-lifetime](./BEMAN_PROCESS.md#library-lifetime). Use the following style:
+**[README.LIBRARY_STATUS]** REQUIREMENT: Following the implements section and a newline, the `README.md` must indicate the library status. Check [BEMAN_PROCESS.md#beman-libraries-lifetime](./BEMAN_PROCESS.md#beman-libraries-lifetime). Use the following style:
 
 ```markdown
-**Library status:** `beman.optional26` is [BEMAN STABLE](./BEMAN_PROCESS.md#library-lifetime) (since (#abcdef)[https://github.com/bemanproject/optional26/commit/#abcef] - 20.11.2024).
+**Library status:** `beman.optional26` is [BEMAN STABLE](./BEMAN_PROCESS.md#beman-libraries-lifetime) (since (#abcdef)[https://github.com/bemanproject/optional26/commit/#abcef] - 20.11.2024).
 ```
 
 ## CMake
