@@ -11,8 +11,6 @@ contribution to Beman libraries.
 
 ## Introduction
 
-This is an extension of the [Beman Standard](./BEMAN_STANDARD.md).
-
 ### Changing this document
 
 This is a living document that adapts to evolving best practices and community
