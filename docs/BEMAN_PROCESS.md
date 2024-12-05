@@ -32,7 +32,8 @@ production-ready status, it may have various changes which are listed below.
 The possible status for a Beman library could be:
 
 1. `BEMAN DEVELOPMENT`:
-    * The target paper(s) may change within the ISO standardization stages, thus also the implementation.
+    * The target paper(s) may change within the ISO standardization stages (check [The life of an ISO proposal: From "cool idea" to "international standard"
+](https://isocpp.org/std/the-life-of-an-iso-proposal)), thus also the implementation.
     * Design changes are expected at this stage.
     * The testing may be incomplete at this stage.
 2. `BEMAN UNSTABLE`:
