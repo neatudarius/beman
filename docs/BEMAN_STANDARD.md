@@ -108,6 +108,8 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(<dependency name>)
 ```
 
+Check `[CMAKE.SKIP_TESTS]` in this document for an actual working example or [exemplar/blob/main/CMakeLists.txt](https://github.com/bemanproject/exemplar/blob/main/CMakeLists.txt).
+
 ## Top-level
 
 The top-level of a Beman library repository must consist of `CMakeLists.txt`,
