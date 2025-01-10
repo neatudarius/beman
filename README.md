@@ -28,7 +28,7 @@ If you are looking for ways to contribute code, see the open issues of [bemanpro
 contributors and usually have an assigned mentor. Don't hesitate to post on discourse with any questions.
 
 Please refer to our [code of conduct](/docs/CODE_OF_CONDUCT.md) and the
-[Beman standard](/docs/BEMAN_STANDARD.md) for further information about the community and
+[Beman Standard](/docs/BEMAN_STANDARD.md) for further information about the community and
 development guidelines.
 
 ### FAQ
@@ -38,6 +38,10 @@ Questions? Maybe they have already been answered in our [FAQ](docs/FAQ.md).
 ### About the Name
 
 The Beman project is named in memory of Beman Dawes - co-founder of [Boost](https://www.boost.org).
+
+### Documentation
+
+The Beman Project has a variety of documentation available in the [docs/](./docs/) directory of this repository.
 
 ## Getting Started
 
