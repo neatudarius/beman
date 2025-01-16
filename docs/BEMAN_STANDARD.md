@@ -143,7 +143,7 @@ Use the following style:
 - `optional::value_or` was replaced with `optional::value_or_eval` ...
 ```
 
-**[CHANGELOG.LIBRARY_STATUS]** REQUIREMENT: The `CHANGELOG.md` must contain a line for each previous library status with respect to the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md).
+**[CHANGELOG.LIBRARY_STATUS]** REQUIREMENT: The `CHANGELOG.md` must contain a line for each previous library status with respect to the [Beman library maturity model](./BEMAN_LIBRARY_MATURITY_MODEL.md).
 
 Use the following style:
 
@@ -186,7 +186,7 @@ contain a one- or two-paragraph summary describing the library's purpose.
 [Give *std::optional* Range Support (P3168R1)](https://wg21.link/P3168R1).
 ```
 
-**[README.LIBRARY_STATUS]** REQUIREMENT: First line after the title in the `README.md` must indicate the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md). Also, check [CHANGELOG.md#LIBRARY_STATUS](#changelogmd#library_status).
+**[README.LIBRARY_STATUS]** REQUIREMENT: First line after the title in the `README.md` must indicate the [Beman library maturity model](./BEMAN_LIBRARY_MATURITY_MODEL.md). Also, check [CHANGELOG.md#LIBRARY_STATUS](#changelogmd#library_status).
 
 Use exactly one of the following badges:
 
