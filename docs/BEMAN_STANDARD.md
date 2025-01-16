@@ -104,8 +104,11 @@ Known exceptions:
 
 ## Top-level
 
-The top-level of a Beman library repository must consist of `CMakeLists.txt`,
+The top-level of a Beman library repository must consist of `CHANGELOG.md`, `CMakeLists.txt`,
 `LICENSE`, and `README.md` files.
+
+**[TOPLEVEL.CHANGELOG]** REQUIREMENT: There must be a `CHANGELOG.md` file at the repository's root
+that describes the changes in each version of the library.
 
 **[TOPLEVEL.CMAKE]** REQUIREMENT: There must be a `CMakeLists.txt` file at the repository's root
 that builds and tests (via. CTest) the library.
@@ -117,6 +120,48 @@ contents of the repository.
 **[TOPLEVEL.README]** REQUIREMENT: There must be a markdown-formatted
 `README.md` file at the repository's root that describes the library, explains how
 to build it, and links to further documentation.
+
+## `CHANGELOG.md`
+
+**[CHANGELOG.TITLE]** REQUIREMENT: The `CHANGELOG.md` must begin with a level 1
+header with the name "Changelog".
+
+**[CHANGELOG.FORMAT]** RECOMMENDATION: The `CHANGELOG.md` should be formatted using the
+[Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format.
+
+Use the following style:
+
+```markdown
+## [Unreleased]
+### Added
+- [LIBRARY_STATUS]: Library status updated to [Production ready. Stable API.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-stable-api) as it is production ready and the API was adopted into the C++ 26 standard.
+
+### Removed
+- Deprecate `optional::value_or` and `optional::value_or_eval` ...
+
+### Changed
+- `optional::value_or` was replaced with `optional::value_or_eval` ...
+```
+
+**[CHANGELOG.LIBRARY_STATUS]** REQUIREMENT: The `CHANGELOG.md` must contain a line for each previous library status with respect to the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md).
+
+Use the following style:
+
+```markdown
+- [LIBRARY_STATUS]: Library status updated to [Under development and not yet ready for production use.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#under-development-and-not-yet-ready-for-production-use) as it is not yet ready for production use.
+```
+
+or
+
+```markdown
+- [LIBRARY_STATUS]: Library status updated to [Production ready. API may undergo changes.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-api-may-undergo-changes) as it is production ready but the API may undergo changes.
+```
+
+or
+
+```markdown
+- [LIBRARY_STATUS]: Library status updated to [Production ready. Stable API.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-stable-api) as it is production ready and the API was adopted into the C++ 26 standard.
+```
 
 ## `README.md`
 
@@ -141,7 +186,7 @@ contain a one- or two-paragraph summary describing the library's purpose.
 [Give *std::optional* Range Support (P3168R1)](https://wg21.link/P3168R1).
 ```
 
-**[README.LIBRARY_STATUS]** REQUIREMENT: First line after the title in the `README.md` must indicate the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md).
+**[README.LIBRARY_STATUS]** REQUIREMENT: First line after the title in the `README.md` must indicate the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md). Also, check [CHANGELOG.md#LIBRARY_STATUS](#changelogmd#library_status).
 
 Use exactly one of the following badges:
 
@@ -191,6 +236,22 @@ Check `[CMAKE.SKIP_TESTS]` in this document for a working example or [exemplar/b
 **[CMAKE.PROJECT_NAME]** RECOMMENDATION: The CMake project name should be
 identical to the beman library name.
 
+**[CMAKE.PASSIVE_PROJECTS]** REQUIREMENT: CMake projects must not adjust
+user-specified compilation flags.
+
+User-provided compilation flags, whether specified via presets, command-line
+options, or toolchains, must not be modified by CMake projects. Therefore, CMake
+projects may not set variables that impact compilation flags such as
+`CMAKE_CXX_FLAGS` and `CMAKE_CXX_STANDARD`, as this would override user settings.
+
+For common compiler/flag combinations, it is recommended to provide CMake presets
+as a convenient alternative for users.
+
+If specific compiler flags are essential for project functionality (e.g., C++
+standard features), use utilities like `check_cxx_source_compiles` to detect
+support and provide a helpful error message suggesting appropriate flags for the
+user's compiler.
+
 **[CMAKE.LIBRARY_NAME]** RECOMMENDATION: The CMake library target's name should
 be identical to the library name.
 
@@ -221,6 +282,20 @@ add_executable(beman.smart_pointer.examples.basic)
 add_executable(beman.smart_pointer.tests.roundtrip)
 #...
 ```
+
+**[CMAKE.PASSIVE_TARGETS]** REQUIREMENT: External targets must not modify
+compilation flags of dependents.
+
+Therefore, `target_compile_features` (e.g., `cxx_std_20`) must not be used
+because it modifies the compilation environment of dependent targets. Compiler
+support for required features should be determined at CMake configuration time
+using `check_cxx_source_compiles`.
+
+Furthermore, `target_compile_definitions` with `PUBLIC` or `INTERFACE`
+visibility must not be used, as these definitions are also propagated to
+dependent targets. Preprocessor definitions intended for external use should be
+generated into a `config.hpp` file at CMake configuration time. This
+`config.hpp` should then be included by public headers.
 
 **[CMAKE.CONFIG]** REQUIREMENT: At `install` time, a
 `<library_name>Config.cmake` must be created which exports a
@@ -473,3 +548,21 @@ copyright notice following the SPDX license identifier.
 
 **[CPP.NAMESPACE]** RECOMMENDATION: Headers in `include/beman/<short_name>/` should export
 entities in the `beman::<short_name>` namespace.
+
+**[CPP.NO_FLAG_FORKING]** REQUIREMENT: C++ preprocessing must produce identical
+output regardless of compiler flags.
+
+Therefore, feature test macros such as `__cpp_explicit_this_parameter` should
+not be used directly. Instead use the following approach for feature-dependent
+code generation:
+
+1. Check for availability at CMake time using, for example,
+   `check_cxx_source_compiles`.
+2. Create a CMake `option` (e.g. `BEMAN_<short_name>_USE_DEDUCING_THIS`)
+   with a default value based on detected support.
+3. Generate a `config.hpp` with a `#define` macro set to the selected option.
+4. Use this macro in place of the feature test macro.
+
+See
+[beman.iterator_interface](https://github.com/bemanproject/iterator_interface/blob/5e6714e10faa1799723669e04abec6e75adbdb89/CMakeLists.txt#L44)
+for an example.
