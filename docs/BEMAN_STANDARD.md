@@ -143,7 +143,7 @@ Use the following style:
 - `optional::value_or` was replaced with `optional::value_or_eval` ...
 ```
 
-**[CHANGELOG.LIBRARY_STATUS]** REQUIREMENT: The `CHANGELOG.md` must contain a line for each previous library status with respect to the [Beman library maturity model](./BEMAN_LIBRARY_MATURITY_MODEL.md).
+**[CHANGELOG.LIBRARY_STATUS]** REQUIREMENT: The `CHANGELOG.md` must contain a line for each previous library status with respect to the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md).
 
 Use the following style:
 
@@ -186,30 +186,56 @@ contain a one- or two-paragraph summary describing the library's purpose.
 [Give *std::optional* Range Support (P3168R1)](https://wg21.link/P3168R1).
 ```
 
-**[README.LIBRARY_STATUS]** REQUIREMENT: First line after the title in the `README.md` must indicate the [Beman library maturity model](./BEMAN_LIBRARY_MATURITY_MODEL.md). Also, check [CHANGELOG.md#LIBRARY_STATUS](#changelogmd#library_status).
+**[README.LIBRARY_STATUS]** REQUIREMENT: Following the implements section and a newline, the `README.md` must indicate the current library status with respect to the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md). Also, check [CHANGELOG.md#LIBRARY_STATUS](#changelogmd#library_status).
 
-Use exactly one of the following badges:
+Use exactly one of the following entries:
 
 ```markdown
-![Library status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_under_development.svg)  (check the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md))
+**Status**: [Under development and not yet ready for production use.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#under-development-and-not-yet-ready-for-production-use)
+```
+
+or 
+
+```markdown
+**Status**: [Production ready. API may undergo changes.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-api-may-undergo-changes)
 ```
 
 or
 
 ```markdown
-![Library status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_production_ready_api_may_undergo_changes.svg)  (check the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md))
+**Status**: [Production ready. Stable API.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-stable-api)
+```
+
+or 
+
+```markdown
+**Status**: [Retired. No longer maintained or actively developed.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#retired-no-longer-maintained-or-actively-developed)
+```
+
+Optionally, an extra badge can be added to the `README.md` to indicate the library status.
+
+Use exactly one of the following entries:
+
+```markdown
+![Library Status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_under_development.svg)
 ```
 
 or
 
 ```markdown
-![Library status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_production_ready_stable_api.svg)  (check the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md))
+![Library Status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_production_ready_api_may_undergo_changes.svg)
+```
+
+or 
+
+```markdown
+![Library Status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_production_ready_stable_api.svg)
 ```
 
 or
 
 ```markdown
-![Library status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_retired.svg)  (check the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md))
+![Library Status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_retired.svg)
 ```
 
 ## CMake
