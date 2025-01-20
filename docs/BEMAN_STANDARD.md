@@ -84,14 +84,18 @@ following requirements:
 ## General
 
 **[LIBRARY.NAMES]** RECOMMENDATION: Beman libraries names begin with `beman.`
-followed by an `snake_case` short name.
+followed by an `snake_case` short name. It should not contain a target C++ version.
 
 Examples: `beman.smart_pointer` and `beman.sender_receiver`.
 
-**[REPOSITORY.NAME]** RECOMMENDATION: The repository should be named after the
-library name excluding the `beman.` prefix.
+Bad examples: `smart_pointer` or `beman.smartpointer` or `beman.optional26`.
 
-Examples: A `beman.smart_pointer` library's repository should be named `smart_pointer`.
+**[REPOSITORY.NAME]** RECOMMENDATION: The repository should be named after the
+library name excluding the `beman.` prefix. It should not contain a target C++ version.
+
+Examples: A `beman.smart_pointer` library's repository should be named `smart_pointer`. A `beman.optional` library's repository should be named `optional`.
+
+Bad examples: `smartpointer` or `optional26`.
 
 **[REPOSITORY.CODEOWNERS]** REQUIREMENT: There must be a `.github/CODEOWNERS` file
 with a relevant set of codeowners.
@@ -348,7 +352,7 @@ In other words prefer,
 ```CMake
 # <repo>/CMakeLists.txt
 # ...
-add_subdirectory(src/beman/optional26)
+add_subdirectory(src/beman/optional)
 ```
 
 to,
@@ -362,7 +366,7 @@ add_subdirectory(src) # Don't do this
 add_subdirectory(beman) # Don't do this
 
 # <repo>/src/beman/CMakeLists.txt
-add_subdirectory(optional26) # Don't do this
+add_subdirectory(optional) # Don't do this
 ```
 
 ## Directory layout
@@ -391,7 +395,7 @@ Examples:
 ```shell
 include
 └── beman
-    └── optional26
+    └── optional
         ├── detail                           # Private implementation subdirectory.
         │   ├── iterator.hpp
         │   └── stl_interfaces
@@ -416,7 +420,7 @@ src
 
 src
 └── beman
-    └── optional26
+    └── optional
         ├── CMakeLists.txt
         ├── detail
         │   └── iterator.cpp
@@ -437,7 +441,7 @@ tests
 
 tests
 └── beman
-    └── optional26
+    └── optional
         ├── CMakeLists.txt
         ├── detail
         │   └── iterator.test.cpp
@@ -474,7 +478,7 @@ docs
 ├── dev
 │   └── lint.md
 ├── local.md
-└── optional26.md
+└── optional.md
 ```
 
 **[DIRECTORY.PAPERS]** REQUIREMENT: If present, all paper related files (e.g., WIP LaTeX/Markdown projects for ISO Standardization), must reside within the top-level `papers/` directory.
