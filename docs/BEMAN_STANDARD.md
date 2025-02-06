@@ -194,7 +194,7 @@ Example:
 ```
 
 **[README.PURPOSE]** RECOMMENDATION: Following the badges list and a newline, the `README.md` should
-contain a one- or two-paragraph summary describing the library's purpose.
+contain a one line summary describing the library's purpose.
 
 **[README.IMPLEMENTS]** RECOMMENDATION: Following the purpose and a newline, the
 `README.md` should indicate which papers the repository implements. Use the following style:
