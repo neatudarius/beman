@@ -186,7 +186,7 @@ Examples:
 # beman.sender_receiver: Scalable Asychronous Program Building Blocks
 ```
 
-**[README.BADGES]** REQUIREMENT: Following the title, the `README.md` must have a one-line badge list. Check `[README.LIBRARY_STATUS]`.
+**[README.BADGES]** REQUIREMENT: Following the title, the `README.md` must have a one-line badge list. Examples: library status (`[README.LIBRARY_STATUS]`), CI status, code coverage.
 
 Example:
 ```markdown
