@@ -186,7 +186,14 @@ Examples:
 # beman.sender_receiver: Scalable Asychronous Program Building Blocks
 ```
 
-**[README.PURPOSE]** RECOMMENDATION: Following the title, the `README.md` should
+**[README.BADGES]** REQUIREMENT: Following the title, the `README.md` must have a one-line badge list. Check `[README.LIBRARY_STATUS]`.
+
+Example:
+```markdown
+![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_under_development.svg) ![Continuous Integration Tests](https://github.com/bemanproject/exemplar/actions/workflows/ci_tests.yml/badge.svg) ![Lint Check (pre-commit)](https://github.com/bemanproject/exemplar/actions/workflows/pre-commit.yml/badge.svg)
+```
+
+**[README.PURPOSE]** RECOMMENDATION: Following the badges list and a newline, the `README.md` should
 contain a one- or two-paragraph summary describing the library's purpose.
 
 **[README.IMPLEMENTS]** RECOMMENDATION: Following the purpose and a newline, the
