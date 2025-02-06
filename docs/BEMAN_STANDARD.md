@@ -193,6 +193,31 @@ Example:
 ![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_under_development.svg) ![Continuous Integration Tests](https://github.com/bemanproject/exemplar/actions/workflows/ci_tests.yml/badge.svg) ![Lint Check (pre-commit)](https://github.com/bemanproject/exemplar/actions/workflows/pre-commit.yml/badge.svg)
 ```
 
+Use exactly one of the following entries for the library status badge:
+
+```markdown
+![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_under_development.svg)
+```
+
+or
+
+```markdown
+![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_production_ready_api_may_undergo_changes.svg)
+```
+
+or 
+
+```markdown
+![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_production_ready_stable_api.svg)
+```
+
+or
+
+```markdown
+![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_retired.svg)
+```
+
+
 **[README.PURPOSE]** RECOMMENDATION: Following the badges list and a newline, the `README.md` should
 contain a one line summary describing the library's purpose.
 
@@ -204,7 +229,7 @@ contain a one line summary describing the library's purpose.
 [Give *std::optional* Range Support (P3168R1)](https://wg21.link/P3168R1).
 ```
 
-**[README.LIBRARY_STATUS]** REQUIREMENT: Following the implements section and a newline, the `README.md` must indicate the current library status with respect to the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md); also, check [CHANGELOG.md#LIBRARY_STATUS](#changelogmd#library_status). An extra badge must be added to the `README.md` to visually indicate the library status.
+**[README.LIBRARY_STATUS]** REQUIREMENT: Following the implements section and a newline, the `README.md` must indicate the current library status with respect to the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md); also, check [CHANGELOG.md#LIBRARY_STATUS](#changelogmd#library_status). An extra badge must be added to the `README.md` to visually indicate the library status - check `[README.BADGES]`.
 
 Use exactly one of the following entries for the status line:
 
@@ -228,30 +253,6 @@ or
 
 ```markdown
 **Status**: [Retired. No longer maintained or actively developed.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#retired-no-longer-maintained-or-actively-developed)
-```
-
-Use exactly one of the following entries for the status badge:
-
-```markdown
-![Library Status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_under_development.svg)
-```
-
-or
-
-```markdown
-![Library Status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_production_ready_api_may_undergo_changes.svg)
-```
-
-or 
-
-```markdown
-![Library Status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_production_ready_stable_api.svg)
-```
-
-or
-
-```markdown
-![Library Status](https://github.com/bemanproject/beman/blob/main/images/badges/beman_badge-beman_library_retired.svg)
 ```
 
 ## CMake
