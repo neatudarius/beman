@@ -156,28 +156,28 @@ SPDX-License-Identifier: 2.0 license with LLVM exceptions
 
 **[CHANGELOG.LIBRARY_STATUS]** REQUIREMENT: The `CHANGELOG.md` must contain a line for each previous library status with respect to the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md).
 
-Use the following style:
+Use one the following style:
 
 ```markdown
-- [LIBRARY_STATUS]: Library status updated to [Under development and not yet ready for production use.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#under-development-and-not-yet-ready-for-production-use) as it is not yet ready for production use.
+- [LIBRARY_STATUS]: Library status updated to [Under development and not yet ready for production use.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#under-development-and-not-yet-ready-for-production-use): It is not yet ready for production use.
 ```
 
 or
 
 ```markdown
-- [LIBRARY_STATUS]: Library status updated to [Production ready. API may undergo changes.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-api-may-undergo-changes) as it is production ready but the API may undergo changes.
+- [LIBRARY_STATUS]: Library status updated to [Production ready. API may undergo changes.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-api-may-undergo-changes): I is production ready but the API may undergo changes.
 ```
 
 or
 
 ```markdown
-- [LIBRARY_STATUS]: Library status updated to [Production ready. Stable API.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-stable-api) as it is production ready and the API was adopted into the C++ 26 standard.
+- [LIBRARY_STATUS]: Library status updated to [Production ready. Stable API.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-stable-api): It is production ready and the API was adopted into the C++ 26 standard.
 ```
 
 or 
 
 ```markdown
-- [LIBRARY_STATUS]: Library status updated to [Retired. No longer maintained or actively developed.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#retired-no-longer-maintained-or-actively-developed) as it was rejected from ISO standardization.
+- [LIBRARY_STATUS]: Library status updated to [Retired. No longer maintained or actively developed.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#retired-no-longer-maintained-or-actively-developed): It was rejected from ISO standardization.
 ```
 
 ## `README.md`
