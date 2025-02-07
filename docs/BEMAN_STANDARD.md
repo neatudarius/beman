@@ -174,6 +174,12 @@ or
 - [LIBRARY_STATUS]: Library status updated to [Production ready. Stable API.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-stable-api) as it is production ready and the API was adopted into the C++ 26 standard.
 ```
 
+or 
+
+```markdown
+- [LIBRARY_STATUS]: Library status updated to [Retired. No longer maintained or actively developed.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#retired-no-longer-maintained-or-actively-developed) as it was rejected from ISO standardization.
+```
+
 ## `README.md`
 
 **[README.TITLE]** RECOMMENDATION: The `README.md` should begin with a level 1
