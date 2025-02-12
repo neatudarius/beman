@@ -165,7 +165,7 @@ Use one of the following styles:
 or
 
 ```markdown
-- [LIBRARY_STATUS]: Library status updated to [Production ready. API may undergo changes.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-api-may-undergo-changes): I is production ready but the API may undergo changes.
+- [LIBRARY_STATUS]: Library status updated to [Production ready. API may undergo changes.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-api-may-undergo-changes): It is production ready but the API may undergo changes.
 ```
 
 or
