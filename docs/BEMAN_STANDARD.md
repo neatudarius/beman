@@ -98,7 +98,7 @@ Examples: A `beman.smart_pointer` library's repository should be named `smart_po
 Bad examples: `smartpointer` or `optional26`.
 
 **[REPOSITORY.CODEOWNERS]** REQUIREMENT: There must be a `.github/CODEOWNERS` file
-with a relevant set of codeowners. `@bemanproject/beman-codeowners` must be the first present entry. Please check [exemplar: CODEOWNERS](https://github.com/bemanproject/exemplar/blob/main/.github/CODEOWNERS).
+with a relevant set of codeowners. [@bemanproject/beman-codeowner](https://github.com/orgs/bemanproject/teams/beman-codeowners/repositories) must be the first present entry, followed by local codeowners. Please check [exemplar: CODEOWNERS](https://github.com/bemanproject/exemplar/blob/main/.github/CODEOWNERS).
 
 **[REPOSITORY.DISALLOW_GIT_SUBMODULES]** RECOMMENDATION: The repository should not use git submodules. Check `CMAKE.USE_FIND_PACKAGE` for alternatives.
 
