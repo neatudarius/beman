@@ -171,6 +171,10 @@ Here is snapshot of notes for a particular release in `examplar`:
 
 ![](./images/release-notes-examples.png)
 
+
+**[RELEASE.GODBOLT_TRUNK_VERSION]** RECOMMENDATION: A Beman library should have at least a trunk version deployed on godbolt with nightyclone mode activated. Check [tutorial: Compiler Explorer Deployment](/tutorials/compiler-explorer-deployment.md).
+
+
 ## Top-level
 
 The top-level of a Beman library repository must consist of `CMakeLists.txt`, `LICENSE`, and `README.md` files.
