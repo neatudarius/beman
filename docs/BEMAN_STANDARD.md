@@ -202,11 +202,11 @@ Examples:
 # beman.sender_receiver: Scalable Asychronous Program Building Blocks
 ```
 
-**[README.BADGES]** REQUIREMENT: Following the title, the `README.md` must have a one-line badge list. Examples: library status (`[README.LIBRARY_STATUS]`), CI status, code coverage.
+**[README.BADGES]** REQUIREMENT: Following the title, the `README.md` must have a one-line badge list. Examples: library status (`[README.LIBRARY_STATUS]`), CI status, code coverage, Compiler Explorer example.
 
 Example:
 ```markdown
-![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_under_development.svg) ![Continuous Integration Tests](https://github.com/bemanproject/exemplar/actions/workflows/ci_tests.yml/badge.svg) ![Lint Check (pre-commit)](https://github.com/bemanproject/exemplar/actions/workflows/pre-commit.yml/badge.svg)
+![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_under_development.svg) ![Continuous Integration Tests](https://github.com/bemanproject/exemplar/actions/workflows/ci_tests.yml/badge.svg) ![Lint Check (pre-commit)](https://github.com/bemanproject/exemplar/actions/workflows/pre-commit.yml/badge.svg) [![Compiler Explorer Example](https://img.shields.io/badge/Try%20it%20on%20Compiler%20Explorer-grey?logo=compilerexplorer&logoColor=67c52a)](https://godbolt.org)
 ```
 
 Use exactly one of the following entries for the library status badge:
@@ -233,6 +233,11 @@ or
 ![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_retired.svg)
 ```
 
+If the library has been deployed onto Compiler Explorer, add this badge and replace the link with the link of the example code taken from Compiler Explorer:
+
+```markdown
+[![Compiler Explorer Example](https://img.shields.io/badge/Try%20it%20on%20Compiler%20Explorer-grey?logo=compilerexplorer&logoColor=67c52a)](https://godbolt.org)
+```
 
 **[README.PURPOSE]** RECOMMENDATION: Following the badges list and a newline, the `README.md` should
 contain a one line summary describing the library's purpose.
