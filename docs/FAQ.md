@@ -44,3 +44,12 @@ No!
 Inclusion in Beman doesn't depend on passing a formal review.
 That said, authors can ask the community for reviews at any time!
 Also, we expect libraries to evolve and using the code review facilities allows authors to get other eyes on updates as proposals evolve.
+
+## Is there a minimum C++ version required for all Beman Projects to support?
+
+No!
+The Beman Project does not define a minimum C++ version for all Beman Projects to support,
+nor does it define a lower boundary for the minimum C++ version to support.
+The C++ version support range is decided by the library author and differs across projects.
+Note that given the nature of the Beman Project,
+it is likely that you'll need to use recent releases of the C++ standard to play around with the projects.
