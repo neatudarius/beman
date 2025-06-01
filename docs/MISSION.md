@@ -13,15 +13,15 @@ The Beman project was founded at C++Now in 2024, the project strives to aggregat
 ---
 
 The Beman project's goals are broad, strategic propositions aligned with its mission and serve as guiding principles.
-An non-exustive list of those goals includes:
+An non-exhaustive list of those goals includes:
 
-- **G1** — *Support for Authors:* Assist library authors by providing appropriate tools and guidance.
-- **G2** — *Best Practices:* Promote adherence to industry standards and best practices.
-- **G3** — *Quality Assurance:* Evaluate and ensure the quality of libraries under the project.
-- **G4** — *User Experience:* Provide users with a seamless integration experience for consuming Beman libraries.
-- **G5** — *Feedback Loops:* Facilitate effortless user feedback to help improve libraries.
-- **G6** — *Inclusive Contribution:* Lower barriers to entry for new contributors and encourage broader participation.
-- **G7** — *ISO Integration:* Deliver reference implementations for ISO proposals, including active paper development.
-- **G8** — *Public Presence:* Maintain a public website that communicates the project’s purpose, offers user-friendly documentation, and helps authors structure their libraries.
+1. **[GOALS.SUPPORT_FOR_AUTHORS] Support for Authors**. Assist library authors by providing appropriate tools and guidance.
+2. **[GOALS.BEST_PRACTICES] Best Practices**. Promote adherence to industry standards and best practices.
+3. **[GOALS.QUALITY_ASSURANCE] Quality Assurance**. Evaluate and ensure the quality of libraries under the project.
+4. **[GOALS.USER_EXPERIENCE] User Experience**. Provide users with a seamless integration experience for consuming Beman libraries.
+5. **[GOALS.FEEDBACK] Feedback Loops**. Facilitate effortless user feedback to help improve libraries.
+6. **[GOALS.CONTRIBUTIONS] Inclusive Contribution**. Lower barriers to entry for new contributors and encourage broader participation.
+7. **[GOALS.ISO_INTEGRATION] ISO Integration**. Deliver reference implementations for ISO proposals, including active paper development.
+8. **[GOALS.PUBLIC_PRESENCE] Public Presence**. Maintain a public website that communicates the project’s purpose, offers user-friendly documentation, and helps authors structure their libraries.
 
 ---
