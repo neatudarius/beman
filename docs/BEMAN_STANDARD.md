@@ -95,6 +95,8 @@ Examples: `beman.smart_pointer` and `beman.sender_receiver`.
 
 Bad examples: `smart_pointer` or `beman.smartpointer` or `beman.optional26`.
 
+## REPOSITORY
+
 ### **[REPOSITORY.NAME]**
 
 **RECOMMENDATION**: The repository should be named after the library name excluding the `beman.` prefix. It should not contain a target C++ version.
@@ -106,6 +108,10 @@ Bad examples: `smartpointer` or `optional26`.
 ### **[REPOSITORY.CODEOWNERS]**
 
 **REQUIREMENT**: There must be a `.github/CODEOWNERS` file with a relevant set of codeowners. Please check [exemplar: CODEOWNERS](https://github.com/bemanproject/exemplar/blob/main/.github/CODEOWNERS).
+
+### **[REPOSITORY.DEFAULT_BRANCH]**
+
+**REQUIREMENT**: The repository must have `main` as default branch.
 
 ### **[REPOSITORY.DISALLOW_GIT_SUBMODULES]**
 
