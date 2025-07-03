@@ -262,6 +262,18 @@ or
 ![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_retired.svg)
 ```
 
+Use exactly one of the following entries for the standard target status badge:
+
+```markdown
+![Standard Target](https://github.com/bemanproject/beman/blob/main/images/badges/cpp26.svg)
+```
+
+or
+
+```markdown
+![Standard Target](https://github.com/bemanproject/beman/blob/main/images/badges/cpp29.svg)
+```
+
 If the library has been deployed onto Compiler Explorer, add this badge and replace the link with the link of the example code taken from Compiler Explorer:
 
 ```markdown
