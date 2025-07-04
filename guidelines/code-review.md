@@ -11,5 +11,5 @@ Short summary of the code review process in the Beman Project organization.
 
 * External contributors require a review from a code owner. If the tagged owner is not available, please ping another one or request a review on [Discourse](https://discourse.bemanproject.org).
 
-* Internal contributors also require a review from a code owner. As an exception, if no review is received within 24 hours, the code owner can merge the PR, but notify the reviewers. Any reported issues will be fixed by the same code owner.
+* Internal contributions also require a review from a code owner. However, if no review is received within 24 hours, the code owner can merge the PR. If issues arise the responsible code owner should resolve.
   - Note: Internal contributors require to have admin rights to bypass the review process in exception cases. Please ping Beman Leads or on [Discourse](https://discourse.bemanproject.org) to request admin rights ahead.
