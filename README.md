@@ -8,7 +8,7 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 
 ### Mission
 
-The Beman Project’s [mission](docs/MISSION_STATEMENT.md) is to **support the efficient design and adoption of the highest quality C++ standard libraries** through implementation experience, user feedback, and technical expertise.
+The Beman Project’s [mission](docs/MISSION.md) is to **support the efficient design and adoption of the highest quality C++ standard libraries** through implementation experience, user feedback, and technical expertise.
 
 ### Community
 
