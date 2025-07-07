@@ -543,7 +543,7 @@ include
 
 ### **[DIRECTORY.SOURCES]**
 
-**RECOMMENDATION**: Sources and headers not part of the
+**REQUIREMENT**: If present, sources and headers not part of the
 public interface should reside in the top-level `src/` directory, and should use
 the same structure from `include/` - e.g., `src/beman/<short_name>/`. Check `CMAKE.AVOID_PASSTHROUGHS`.
 
