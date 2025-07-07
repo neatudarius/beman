@@ -4,7 +4,7 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 
 The Beman project's mission is to **support the efficient design and adoption of the highest quality C++ standard libraries** through implementation experience, user feedback, and technical expertise.
 
-The Beman project is named [https://bemanproject.org/blog/about-beman](in memory of Beman Dawes) - co-founder of [Boost](https://www.boost.org).
+The Beman project is named [in memory of Beman Dawes](https://bemanproject.org/blog/about-beman) - co-founder of [Boost](https://www.boost.org).
 
 ---
 
