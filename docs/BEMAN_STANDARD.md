@@ -598,7 +598,7 @@ tests
 
 ### **[DIRECTORY.EXAMPLES]**
 
-**REQUIREMENT**: If present, all example files must reside within the top-level `examples/`
+**REQUIREMENT**: All example files must reside within the top-level `examples/`
 directory. Each project must have at least one relevant example.
 
 Examples:
