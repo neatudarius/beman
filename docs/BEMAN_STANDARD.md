@@ -569,7 +569,8 @@ src
 
 **REQUIREMENT**: All test files must reside within the top-level `tests/`
 directory, and should use the same structure from `include/`. If multiple test types are present,
-subdirectories can be made (e.g., unit tests, performance etc).
+subdirectories can be made (e.g., unit tests, performance etc). Each project must have at least
+one relevant test.
 
 Examples:
 
