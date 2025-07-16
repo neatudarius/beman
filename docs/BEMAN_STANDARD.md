@@ -66,7 +66,34 @@ recommendations.
 2. [Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt)
 3. [The MIT License](https://opensource.org/license/mit)
 
-Check [LICENSE.APACHE_LLVM](#licenseapache_llvm) for recommended license.
+Use the following format:
+
+```markdown
+==============================================================================
+The Beman Project is under the Apache License v2.0 with LLVM Exceptions:
+==============================================================================
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+... // actual license content
+
+==============================================================================
+Software from third parties included in the Beman Project:
+==============================================================================
+The Beman Project contains third party software which is under different license
+terms. All such code will be identified clearly using at least one of two
+mechanisms:
+1) It will be in a separate directory tree with its own `LICENSE.txt` or
+   `LICENSE` file at the top containing the specific license and restrictions
+   which apply to that software, or
+2) It will contain specific license and restriction terms at the top of every
+   file.
+
+```
+
+Check [LICENSE.APACHE_LLVM](#licenseapache_llvm) for recommended license format.
 
 ### **[LICENSE.APACHE_LLVM]**
 
