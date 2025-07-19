@@ -101,7 +101,7 @@ Check [LICENSE.APACHE_LLVM](#licenseapache_llvm) for recommended license format.
 under the `Apache License v2.0 with LLVM Exceptions`
 (first recommended license in [LICENSE.APPROVED](#licenseapproved)).
 
-Use the exact content from [beman/LICENSE](../LICENSE)
+Use the exact content from [beman/LICENSE](https://github.com/bemanproject/beman/blob/main/LICENSE)
 into your library's `LICENSE` file.
 
 ### **[LICENSE.CRITERIA]**
@@ -224,7 +224,7 @@ Here is snapshot of notes for a particular release in `exemplar`:
 
 ### **[RELEASE.GODBOLT_TRUNK_VERSION]**
 
-**RECOMMENDATION**: A Beman library should have at least a trunk version deployed on godbolt with nightyclone mode activated. Check [tutorial: Compiler Explorer Deployment](/tutorials/compiler-explorer-deployment.md).
+**RECOMMENDATION**: A Beman library should have at least a trunk version deployed on godbolt with nightyclone mode activated. Check [tutorial: Compiler Explorer Deployment](https://github.com/bemanproject/beman/blob/main/guidelines/compiler-explorer-deployment.md).
 
 
 ## Top-level
