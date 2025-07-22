@@ -137,13 +137,41 @@ Examples: A `beman.smart_pointer` library's repository should be named `smart_po
 
 Bad examples: `smartpointer` or `optional26`.
 
+### **[REPOSITORY.DEFAULT_BRANCH]**
+
+**REQUIREMENT**: The repository must have `main` as default branch.
+
+You can change the `default branch` via default repository settings menu - e.g., [exemplar/settings](https://github.com/bemanproject/exemplar/settings). 
+
+Here is snapshot of `default branch` settings in `exemplar` repository:
+
+![](./images/REPOSITORY.DEFAULT_BRANCH-settings-example.png)
+
 ### **[REPOSITORY.CODEOWNERS]**
 
 **REQUIREMENT**: There must be a `.github/CODEOWNERS` file with a relevant set of codeowners. Please check [exemplar: CODEOWNERS](https://github.com/bemanproject/exemplar/blob/main/.github/CODEOWNERS).
 
-### **[REPOSITORY.DEFAULT_BRANCH]**
+### **[REPOSITORY.CODE_REVIEW_RULES]**
 
-**REQUIREMENT**: The repository must have `main` as default branch.
+**REQUIREMENT**: There must be a default `Rulesets` configured for any Beman repository (library, infrastructre, documentation, etc.)
+
+Use the following example:
+* Go to your repository's settings - e.g., [exemplar/settings](https://github.com/bemanproject/exemplar/settings/).
+* Go to `Code and automation` / `Rules` / `Rulesets` - e.g., [exemplar/settings/rulesets](https://github.com/bemanproject/exemplar/settings/rules/).
+* You should have a single ruleset named `Default` - e.g., [exemplar/settings/rulesets/beman](https://github.com/bemanproject/exemplar/settings/rulesets/beman).
+* Create (via `New ruleset` button) or update (click on `Default` ruleset) it to include the following rules:
+  * Rulset Name: `Default`
+  * Enforcement status: `Active`
+  * Bypass list: Check `Organization admin` and `Repository admin`
+  * Target branch: Check `Include default branch`
+  * Go to `Rules` section
+    * Check `Restrict deletions` and `Block force pushes`
+    * Check `Require a pull request before merging` and configure it to have `Required approvals: 1`, `Require review from Code Owners` and `Allowed merge methods: Merge, Squash, Rebase`.
+* Click `Create` to save the ruleset.
+
+Here is a snapshot of `default branch` settings in `exemplar`:
+
+![](./images/REPOSITORY.REVIEW_RULES-ruleset-example.gif)
 
 ### **[REPOSITORY.DISALLOW_GIT_SUBMODULES]**
 
@@ -217,9 +245,9 @@ This release has a status of [Under development and not yet ready for production
 
 Complete examples can be found in [https://github.com/bemanproject/exemplar/releases](https://github.com/bemanproject/exemplar/releases).
 
-Here is snapshot of notes for a particular release in `exemplar`:
+Here is a snapshot of notes for a particular release in `exemplar`:
 
-![](/images/release-notes-examples.png)
+![](./images/RELEASE.NOTES-release-notes-examples.png)
 
 
 ### **[RELEASE.GODBOLT_TRUNK_VERSION]**
