@@ -102,7 +102,7 @@ Bad examples: `smart_pointer` or `beman.smartpointer` or `beman.optional26`.
 
 ### **[REPOSITORY.NAME]**
 
-**RECOMMENDATION**: The repository should be named after the library name excluding the `beman.` prefix. It should not contain a target C++ version.
+**REQUIREMENT**: The repository must be named after the library name excluding the `beman.` prefix. It must not contain a target C++ version.
 
 Examples: A `beman.smart_pointer` library's repository should be named `smart_pointer`. A `beman.optional` library's repository should be named `optional`.
 
