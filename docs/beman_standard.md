@@ -112,7 +112,7 @@ Bad examples: `smartpointer` or `optional26`.
 
 **Requirement**: The repository must have `main` as default branch.
 
-You can change the `default branch` via default repository settings menu - e.g., [exemplar/settings](https://github.com/bemanproject/exemplar/settings). 
+You can change the `default branch` via default repository settings menu - e.g., [exemplar/settings](https://github.com/bemanproject/exemplar/settings).
 
 Here is snapshot of `default branch` settings in `exemplar` repository:
 
@@ -575,6 +575,63 @@ add_subdirectory(beman) # Don't do this
 
 # <repo>/src/beman/CMakeLists.txt
 add_subdirectory(optional) # Don't do this
+```
+
+###  **[cmake.implicit_defaults]**
+
+**Recommendation**: Where CMake commands have reasonable default values, and the project does not intend to change those values, the parameters should be left implicitly defaulted rather than enumerated in the command.
+
+Example:
+
+```CMake
+install(
+    TARGETS beman.project
+    EXPORT beman.project-targets
+    FILE_SET HEADERS
+)
+```
+
+Bad Example:
+
+```CMake
+install(
+    TARGETS beman.project
+    EXPORT beman.project-targets
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME
+        DESTINATION ${CMAKE_INSTALL_BINDIR}
+    FILE_SET HEADERS
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
+```
+
+### **[cmake.no_single_use_vars]**
+
+**Recommendation**: Avoid using `set()` to create variables that are only used once. Prefer using the value(s) directly in such cases.
+
+Example:
+
+```CMake
+target_sources(beman.project
+    PRIVATE
+        a.cpp
+        b.cpp
+        c.cpp
+)
+```
+
+Bad Example:
+
+```CMake
+set(SOURCES
+    a.cpp
+    b.cpp
+    c.cpp
+)
+
+# ...
+
+target_sources(beman.project PRIVATE ${SOURCES})
 ```
 
 ## Directory layout
