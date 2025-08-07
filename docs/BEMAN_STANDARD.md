@@ -90,7 +90,7 @@ into your library's `LICENSE` file.
 
 ## General
 
-### **[LIBRARY.NAMES]**
+### **[LIBRARY.NAME]**
 
 **RECOMMENDATION**: Beman libraries names begin with `beman.` followed by a `snake_case` short name. It should not contain a target C++ version.
 
