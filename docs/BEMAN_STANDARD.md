@@ -116,7 +116,7 @@ You can change the `default branch` via default repository settings menu - e.g.,
 
 Here is snapshot of `default branch` settings in `exemplar` repository:
 
-![](./images/REPOSITORY.DEFAULT_BRANCH-settings-example.png)
+![](./images/repository.default_branch-settings-example.png)
 
 ### **[repository.codeowners]**
 
@@ -142,7 +142,7 @@ Use the following example:
 
 Here is a snapshot of `default branch` settings in `exemplar`:
 
-![](./images/REPOSITORY.REVIEW_RULES-ruleset-example.gif)
+![](./images/repository.code_review_rules-ruleset-example.gif)
 
 ### **[repository.disallow_git_submodules]**
 
@@ -218,7 +218,7 @@ Complete examples can be found in [https://github.com/bemanproject/exemplar/rele
 
 Here is a snapshot of notes for a particular release in `exemplar`:
 
-![](./images/RELEASE.NOTES-release-notes-examples.png)
+![](./images/release.notes-release-notes-example.png)
 
 
 ### **[release.godbolt_trunk_version]**
