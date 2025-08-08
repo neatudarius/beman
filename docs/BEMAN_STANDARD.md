@@ -444,7 +444,7 @@ be identical to the library name.
 Examples:
 
 ```CMake
-add_library(beman.smart_pointer STATIC)
+add_library(beman.smart_pointer)
 #...
 ```
 
