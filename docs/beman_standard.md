@@ -167,7 +167,7 @@ Known exceptions:
 
    2.1. An "About" section describing the main purpose and impact of the release.
 
-   2.2. A "Release Maturity" section indicating the current status of the library according to the [Beman Library Maturity Model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md).
+   2.2. A "Release Maturity" section indicating the current status of the library according to the [Beman Library Maturity Model](https://github.com/bemanproject/beman/blob/main/docs/beman_library_maturity_model.md).
 
    2.3. A "Changelog" section listing all changes, organized by:
    - Breaking changes (if any)
@@ -193,7 +193,7 @@ Use the following format:
 
 <!-- TODO: Update this section and remove this comment. -->
 
-This release has a status of [Under development and not yet ready for production use.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#under-development-and-not-yet-ready-for-production-use).
+This release has a status of [Under development and not yet ready for production use.](https://github.com/bemanproject/beman/blob/main/docs/beman_library_maturity_model.md#under-development-and-not-yet-ready-for-production-use).
 
 
 ## Changelog
@@ -332,25 +332,25 @@ If the library has been deployed onto Compiler Explorer, add this badge and repl
 Use exactly one of the following entries for the status line:
 
 ```markdown
-**Status**: [Under development and not yet ready for production use.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#under-development-and-not-yet-ready-for-production-use)
+**Status**: [Under development and not yet ready for production use.](https://github.com/bemanproject/beman/blob/main/docs/beman_library_maturity_model.md#under-development-and-not-yet-ready-for-production-use)
 ```
 
 or
 
 ```markdown
-**Status**: [Production ready. API may undergo changes.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-api-may-undergo-changes)
+**Status**: [Production ready. API may undergo changes.](https://github.com/bemanproject/beman/blob/main/docs/beman_library_maturity_model.md#production-ready-api-may-undergo-changes)
 ```
 
 or
 
 ```markdown
-**Status**: [Production ready. Stable API.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#production-ready-stable-api)
+**Status**: [Production ready. Stable API.](https://github.com/bemanproject/beman/blob/main/docs/beman_library_maturity_model.md#production-ready-stable-api)
 ```
 
 or
 
 ```markdown
-**Status**: [Retired. No longer maintained or actively developed.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#retired-no-longer-maintained-or-actively-developed)
+**Status**: [Retired. No longer maintained or actively developed.](https://github.com/bemanproject/beman/blob/main/docs/beman_library_maturity_model.md#retired-no-longer-maintained-or-actively-developed)
 ```
 
 ### **[readme.license]**
