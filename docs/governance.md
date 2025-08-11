@@ -67,7 +67,7 @@ Beman Project Leads ultimately decide the direction of the Project.
 
 # 5. Code of Conduct
 
-Please refer to our [Code of Conduct](CODE_OF_CONDUCT.md).
+Please refer to our [Code of Conduct](./code_of_conduct.md).
 
 # 5.1 Respectful Behavior:
 
