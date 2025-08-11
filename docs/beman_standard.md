@@ -50,17 +50,17 @@ With the exception of the core principles, these entries are either rules or
 recommendations.
 
 - **Requirements** must be followed in order to conform to this standard. These entries
-  are prefixed by "REQUIREMENT:".
+  are prefixed by "Requirement:".
 - **Recommendations** should be followed in general, but specific circumstances
   may make this a less-than-ideal choice. Libraries not following a specific
   recommendation can still conform to this standard. These entries are prefixed
-  by "RECOMMENDATION:".
+  by "Recommendation:".
 
 ## License
 
 ### **[license.approved]**
 
-**REQUIREMENT**: All Beman libraries must be licensed under an approved license. These are:
+**Requirement**: All Beman libraries must be licensed under an approved license. These are:
 
 1. [Apache License v2.0 with LLVM Exceptions](https://llvm.org/LICENSE.txt)
 2. [Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt)
@@ -68,7 +68,7 @@ recommendations.
 
 ### **[license.apache_llvm]**
 
-**RECOMMENDATION**: A Beman library should be licensed
+**Recommendation**: A Beman library should be licensed
 under the `Apache License v2.0 with LLVM Exceptions`
 (first recommended license in [license.approved](#licenseapproved)).
 
@@ -77,7 +77,7 @@ into your library's `LICENSE` file.
 
 ### **[license.criteria]**
 
-**REQUIREMENT**: All approved licenses must meet the following requirements:
+**Requirement**: All approved licenses must meet the following requirements:
 
 1. Simple to read and understand.
 2. Permission without fee to copy, use and modify the software for any
@@ -92,7 +92,7 @@ into your library's `LICENSE` file.
 
 ### **[library.name]**
 
-**RECOMMENDATION**: Beman libraries names begin with `beman.` followed by a `snake_case` short name. It should not contain a target C++ version.
+**Recommendation**: Beman libraries names begin with `beman.` followed by a `snake_case` short name. It should not contain a target C++ version.
 
 Examples: `beman.smart_pointer` and `beman.sender_receiver`.
 
@@ -102,7 +102,7 @@ Bad examples: `smart_pointer` or `beman.smartpointer` or `beman.optional26`.
 
 ### **[repository.name]**
 
-**REQUIREMENT**: The repository must be named after the library name excluding the `beman.` prefix. It must not contain a target C++ version.
+**Requirement**: The repository must be named after the library name excluding the `beman.` prefix. It must not contain a target C++ version.
 
 Examples: A `beman.smart_pointer` library's repository should be named `smart_pointer`. A `beman.optional` library's repository should be named `optional`.
 
@@ -110,9 +110,9 @@ Bad examples: `smartpointer` or `optional26`.
 
 ### **[repository.default_branch]**
 
-**REQUIREMENT**: The repository must have `main` as default branch.
+**Requirement**: The repository must have `main` as default branch.
 
-You can change the `default branch` via default repository settings menu - e.g., [exemplar/settings](https://github.com/bemanproject/exemplar/settings). 
+You can change the `default branch` via default repository settings menu - e.g., [exemplar/settings](https://github.com/bemanproject/exemplar/settings).
 
 Here is snapshot of `default branch` settings in `exemplar` repository:
 
@@ -120,11 +120,11 @@ Here is snapshot of `default branch` settings in `exemplar` repository:
 
 ### **[repository.codeowners]**
 
-**REQUIREMENT**: There must be a `.github/CODEOWNERS` file with a relevant set of codeowners. Please check [exemplar: CODEOWNERS](https://github.com/bemanproject/exemplar/blob/main/.github/CODEOWNERS).
+**Requirement**: There must be a `.github/CODEOWNERS` file with a relevant set of codeowners. Please check [exemplar: CODEOWNERS](https://github.com/bemanproject/exemplar/blob/main/.github/CODEOWNERS).
 
 ### **[repository.code_review_rules]**
 
-**REQUIREMENT**: There must be a default `Rulesets` configured for any Beman repository (library, infrastructre, documentation, etc.)
+**Requirement**: There must be a default `Rulesets` configured for any Beman repository (library, infrastructre, documentation, etc.)
 
 Use the following example:
 * Go to your repository's settings - e.g., [exemplar/settings](https://github.com/bemanproject/exemplar/settings/).
@@ -146,7 +146,7 @@ Here is a snapshot of `default branch` settings in `exemplar`:
 
 ### **[repository.disallow_git_submodules]**
 
-**RECOMMENDATION**: The repository should not use git submodules. Check `cmake.use_find_package` for alternatives.
+**Recommendation**: The repository should not use git submodules. Check `cmake.use_find_package` for alternatives.
 
 Known exceptions:
 * [mpark/wg21: Framework for Writing C++ Committee Papers](https://github.com/mpark/wg21): A non-C++ submodule designed for drafting ISO C++ papers using LaTeX or Markdown.
@@ -155,11 +155,11 @@ Known exceptions:
 
 ### **[release.github]**
 
-**REQUIREMENT**: All Beman libraries must be released using [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github).
+**Requirement**: All Beman libraries must be released using [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github).
 
 ### **[release.notes]**
 
-**RECOMMENDATION**: Release should include:
+**Recommendation**: Release should include:
 
 1. A title that clearly indicates the release version and purpose. (Check visual example for the field location.)
 
@@ -223,7 +223,7 @@ Here is a snapshot of notes for a particular release in `exemplar`:
 
 ### **[release.godbolt_trunk_version]**
 
-**RECOMMENDATION**: A Beman library should have at least a trunk version deployed on godbolt with nightyclone mode activated. Check [tutorial: Compiler Explorer Deployment](https://github.com/bemanproject/beman/blob/main/guidelines/compiler-explorer-deployment.md).
+**Recommendation**: A Beman library should have at least a trunk version deployed on godbolt with nightyclone mode activated. Check [tutorial: Compiler Explorer Deployment](https://github.com/bemanproject/beman/blob/main/guidelines/compiler-explorer-deployment.md).
 
 
 ## Top-level
@@ -232,17 +232,17 @@ The top-level of a Beman library repository must consist of `CMakeLists.txt`, `L
 
 ### **[toplevel.cmake]**
 
-**REQUIREMENT**: There must be a `CMakeLists.txt` file at the repository's root that builds and tests (via. CTest) the library.
+**Requirement**: There must be a `CMakeLists.txt` file at the repository's root that builds and tests (via. CTest) the library.
 
 ### **[toplevel.license]**
 
-**REQUIREMENT**: There must be a `LICENSE` file at the
+**Requirement**: There must be a `LICENSE` file at the
 repository's root with the contents of an approved license that covers the
 contents of the repository.
 
 ### **[toplevel.readme]**
 
-**REQUIREMENT**: There must be a markdown-formatted
+**Requirement**: There must be a markdown-formatted
 `README.md` file at the repository's root that describes the library, explains how
 to build it, and links to further documentation.
 
@@ -250,7 +250,7 @@ to build it, and links to further documentation.
 
 ### **[readme.title]**
 
-**RECOMMENDATION**: The `README.md` should begin with a level 1
+**Recommendation**: The `README.md` should begin with a level 1
 header with the name of the library optionally followed with a ":" and short
 description.
 
@@ -262,7 +262,7 @@ Examples:
 
 ### **[readme.badges]**
 
-**REQUIREMENT**: Following the title, the `README.md` must have a one-line badge list. Examples: library status (`[readme.library_status]`), CI status, code coverage, Compiler Explorer example.
+**Requirement**: Following the title, the `README.md` must have a one-line badge list. Examples: library status (`[readme.library_status]`), CI status, code coverage, Compiler Explorer example.
 
 Example:
 ```markdown
@@ -313,11 +313,11 @@ If the library has been deployed onto Compiler Explorer, add this badge and repl
 
 ### **[readme.purpose]**
 
-**RECOMMENDATION**: Following the badges list and a newline, the `README.md` should contain a one line summary describing the library's purpose.
+**Recommendation**: Following the badges list and a newline, the `README.md` should contain a one line summary describing the library's purpose.
 
 ### **[readme.implements]**
 
-**RECOMMENDATION**: Following the purpose and a newline, the
+**Recommendation**: Following the purpose and a newline, the
 `README.md` should indicate which papers the repository implements. Use the following style:
 
 ```markdown
@@ -327,7 +327,7 @@ If the library has been deployed onto Compiler Explorer, add this badge and repl
 
 ### **[readme.library_status]**
 
-**REQUIREMENT**: Following the implements section and a newline, the `README.md` must indicate the **current** library status with respect to the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/beman_library_maturity_model.md). An extra badge must be added to the `README.md` to visually indicate the library status (check `[readme.badges]`). Note: The full library status history can be found in the GitHub release notes.
+**Requirement**: Following the implements section and a newline, the `README.md` must indicate the **current** library status with respect to the [Beman library maturity model](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md). An extra badge must be added to the `README.md` to visually indicate the library status (check `[readme.badges]`). Note: The full library status history can be found in the GitHub release notes.
 
 Use exactly one of the following entries for the status line:
 
@@ -355,7 +355,7 @@ or
 
 ### **[readme.license]**
 
-**REQUIREMENT**: Following the library status line and a new line, the `README.md` must have a `LICENSE` section.
+**Requirement**: Following the library status line and a new line, the `README.md` must have a `LICENSE` section.
 
 Use exactly the following format:
 ```markdown
@@ -400,11 +400,11 @@ beman.exemplar is licensed under the Boost Software License 1.0 and under the ..
 
 ### **[cmake.default]**
 
-**RECOMMENDATION**: The root `CMakeLists.txt` should build all targets by default (including dependency targets).
+**Recommendation**: The root `CMakeLists.txt` should build all targets by default (including dependency targets).
 
 ### **[cmake.use_find_package]**
 
-**RECOMMENDATION**: The root `CMakeLists.txt` should fetch all dependency targets via [CMake `find_package`](https://cmake.org/cmake/help/latest/command/find_package.html).
+**Recommendation**: The root `CMakeLists.txt` should fetch all dependency targets via [CMake `find_package`](https://cmake.org/cmake/help/latest/command/find_package.html).
 
 Use the following style:
 
@@ -417,11 +417,11 @@ See `[cmake.skip_tests]` in this document for a working example or [exemplar/blo
 
 ### **[cmake.project_name]**
 
-**RECOMMENDATION**: The CMake project name should be identical to the beman library name.
+**Recommendation**: The CMake project name should be identical to the beman library name.
 
 ### **[cmake.passive_projects]**
 
-**REQUIREMENT**: CMake projects must not adjust user-specified compilation flags.
+**Requirement**: CMake projects must not adjust user-specified compilation flags.
 
 User-provided compilation flags, whether specified via presets, command-line
 options, or toolchains, must not be modified by CMake projects. Therefore, CMake
@@ -438,7 +438,7 @@ user's compiler.
 
 ### **[cmake.library_name]**
 
-**RECOMMENDATION**: The CMake library target's name should
+**Recommendation**: The CMake library target's name should
 be identical to the library name.
 
 Examples:
@@ -450,7 +450,7 @@ add_library(beman.smart_pointer)
 
 ### **[cmake.library_alias]**
 
-**REQUIREMENT**: The CMake code must create an alias of
+**Requirement**: The CMake code must create an alias of
 the library target named `beman::<short_name>`. This target is intended for
 external use.
 
@@ -463,7 +463,7 @@ add_library(beman::smart_pointer ALIAS beman.smart_pointer)
 
 ### **[cmake.target_names]**
 
-**RECOMMENDATION**: All targets, aside from the library target, should begin with a `<library_name>.` prefix
+**Recommendation**: All targets, aside from the library target, should begin with a `<library_name>.` prefix
 
 ```CMake
 add_executable(beman.smart_pointer.examples.basic)
@@ -474,7 +474,7 @@ add_executable(beman.smart_pointer.tests.roundtrip)
 
 ### **[cmake.passive_targets]**
 
-**REQUIREMENT**: External targets must not modify compilation flags of dependents.
+**Requirement**: External targets must not modify compilation flags of dependents.
 
 Therefore, `target_compile_features` (e.g., `cxx_std_20`) must not be used
 because it modifies the compilation environment of dependent targets. Compiler
@@ -489,13 +489,13 @@ generated into a `config.hpp` file at CMake configuration time. This
 
 ### **[cmake.config]**
 
-**REQUIREMENT**: At `install` time, a
+**Requirement**: At `install` time, a
 `<library_name>-config.cmake` must be created which exports a
 `beman::<short_name>` target.
 
 ### **[cmake.skip_tests]**
 
-**RECOMMENDATION**: The root `CMakeLists.txt` should not build tests and their dependencies when `BEMAN_<short_name>_BUILD_TESTS` is set to `OFF` (see [CTest docs](https://cmake.org/cmake/help/latest/module/CTest.html) - similar to cmake's `BUILD_TESTING`). The option is prefixed with the project so that projects can compose. Turning on testing for the top level project should not turn on testing for dependencies. Since testing is part of the normal development workflow it is appropriate to set the option on by default for the top level project.
+**Recommendation**: The root `CMakeLists.txt` should not build tests and their dependencies when `BEMAN_<short_name>_BUILD_TESTS` is set to `OFF` (see [CTest docs](https://cmake.org/cmake/help/latest/module/CTest.html) - similar to cmake's `BUILD_TESTING`). The option is prefixed with the project so that projects can compose. Turning on testing for the top level project should not turn on testing for dependencies. Since testing is part of the normal development workflow it is appropriate to set the option on by default for the top level project.
 
 Use the following style:
 
@@ -529,7 +529,7 @@ gtest_discover_tests(myrepo-tests)
 
 ### **[cmake.skip_examples]**
 
-**RECOMMENDATION**: The root `CMakeLists.txt` should not build examples and their dependencies when `BEMAN_<short_name>_BUILD_EXAMPLES` is set to `OFF`. The option is prefixed with the project so that projects can compose. Turning on examples for the top level project should not turn on examples for dependencies.
+**Recommendation**: The root `CMakeLists.txt` should not build examples and their dependencies when `BEMAN_<short_name>_BUILD_EXAMPLES` is set to `OFF`. The option is prefixed with the project so that projects can compose. Turning on examples for the top level project should not turn on examples for dependencies.
 
 Use the following style:
 
@@ -553,7 +553,7 @@ endif()
 
 ### **[cmake.avoid_passthroughs]**
 
-**RECOMMENDATION**: Avoid `CMakeLists.txt` files consisting of a single `add_subdirectory` call.
+**Recommendation**: Avoid `CMakeLists.txt` files consisting of a single `add_subdirectory` call.
 
 In other words prefer,
 
@@ -577,11 +577,68 @@ add_subdirectory(beman) # Don't do this
 add_subdirectory(optional) # Don't do this
 ```
 
+###  **[cmake.implicit_defaults]**
+
+**Recommendation**: Where CMake commands have reasonable default values, and the project does not intend to change those values, the parameters should be left implicitly defaulted rather than enumerated in the command.
+
+Example:
+
+```CMake
+install(
+    TARGETS beman.project
+    EXPORT beman.project-targets
+    FILE_SET HEADERS
+)
+```
+
+Bad Example:
+
+```CMake
+install(
+    TARGETS beman.project
+    EXPORT beman.project-targets
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME
+        DESTINATION ${CMAKE_INSTALL_BINDIR}
+    FILE_SET HEADERS
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
+```
+
+### **[cmake.no_single_use_vars]**
+
+**Recommendation**: Avoid using `set()` to create variables that are only used once. Prefer using the value(s) directly in such cases.
+
+Example:
+
+```CMake
+target_sources(beman.project
+    PRIVATE
+        a.cpp
+        b.cpp
+        c.cpp
+)
+```
+
+Bad Example:
+
+```CMake
+set(SOURCES
+    a.cpp
+    b.cpp
+    c.cpp
+)
+
+# ...
+
+target_sources(beman.project PRIVATE ${SOURCES})
+```
+
 ## Directory layout
 
 ### **[directory.interface_headers]**
 
-**REQUIREMENT**: Header files that are part of the public interface must reside within the `include/beman/<short_name>/` directory.
+**Requirement**: Header files that are part of the public interface must reside within the `include/beman/<short_name>/` directory.
 
 Examples:
 
@@ -596,7 +653,7 @@ include
 
 ### **[directory.implementation_headers]**
 
-**REQUIREMENT**: Header files residing within `include/beman/<short_name>/` that are not part of the public interface
+**Requirement**: Header files residing within `include/beman/<short_name>/` that are not part of the public interface
 must either begin with `detail_` or reside within a subdirectory of
 `include/beman/<short_name>/` called `detail` or begins with `detail_`.
 
@@ -617,7 +674,7 @@ include
 
 ### **[directory.sources]**
 
-**REQUIREMENT**: If present, sources and headers not part of the
+**Requirement**: If present, sources and headers not part of the
 public interface should reside in the top-level `src/` directory, and should use
 the same structure from `include/` - e.g., `src/beman/<short_name>/`. Check `cmake.avoid_passthroughs`.
 
@@ -641,7 +698,7 @@ src
 
 ### **[directory.tests]**
 
-**REQUIREMENT**: All test files must reside within the top-level `tests/`
+**Requirement**: All test files must reside within the top-level `tests/`
 directory, and should use the same structure from `include/`. If multiple test types are present,
 subdirectories can be made (e.g., unit tests, performance etc). Each project must have at least
 one relevant test.
@@ -672,7 +729,7 @@ tests
 
 ### **[directory.examples]**
 
-**REQUIREMENT**: All example files must reside within the top-level `examples/`
+**Requirement**: All example files must reside within the top-level `examples/`
 directory. Each project must have at least one relevant example.
 
 Examples:
@@ -686,7 +743,7 @@ examples
 
 ### **[directory.docs]**
 
-**REQUIREMENT**: If present, all documentation files, except the root `README.md`, must reside within the top-level `docs/` directory. If multiple docs types are present, subdirectories can be made (e.g., dev, public/private etc).
+**Requirement**: If present, all documentation files, except the root `README.md`, must reside within the top-level `docs/` directory. If multiple docs types are present, subdirectories can be made (e.g., dev, public/private etc).
 
 Examples:
 
@@ -702,7 +759,7 @@ docs
 
 ### **[directory.papers]**
 
-**REQUIREMENT**: If present, all paper related files (e.g., WIP LaTeX/Markdown projects for ISO Standardization), must reside within the top-level `papers/` directory.
+**Requirement**: If present, all paper related files (e.g., WIP LaTeX/Markdown projects for ISO Standardization), must reside within the top-level `papers/` directory.
 
 Examples:
 
@@ -719,19 +776,19 @@ papers
 
 ### **[file.names]**
 
-**RECOMMENDATION**: Source code and header should use the `snake_case` naming convention (similar to `LIBRARY.NAMES`).
+**Recommendation**: Source code and header should use the `snake_case` naming convention (similar to `LIBRARY.NAMES`).
 
 Examples: `identity.hpp`, `identity.cpp`, `iterator_interface.hpp` or `optional_range_support.test.cpp`.
 
 ### **[file.test_names]**
 
-**REQUIREMENT**: Test source code files must use the `*.test.cpp` naming convention.
+**Requirement**: Test source code files must use the `*.test.cpp` naming convention.
 
 Examples: `identity.test.cpp`, `optional_ref.test.cpp` or `optional_range_support.test.cpp`.
 
 ### **[file.license_id]**
 
-**REQUIREMENT**: The [SPDX license identifier](https://spdx.dev/learn/handling-license-info/) must be added at the
+**Requirement**: The [SPDX license identifier](https://spdx.dev/learn/handling-license-info/) must be added at the
 first possible line in all files which can contain a comment
 (e.g., C++, scripts, CMake/Makefile, YAML/YML, JASON, XML, HTML, LaTeX, Dockerfile etc).
 
@@ -761,18 +818,18 @@ SPDX-License-Identifier: <SPDX License Expression>
 
 ### **[file.copyright]**
 
-**RECOMMENDATION**: Source code files should NOT include a copyright notice following the SPDX license identifier.
+**Recommendation**: Source code files should NOT include a copyright notice following the SPDX license identifier.
 
 ## C++
 
 ### **[cpp.namespace]**
 
-**RECOMMENDATION**: Headers in `include/beman/<short_name>/` should export
+**Recommendation**: Headers in `include/beman/<short_name>/` should export
 entities in the `beman::<short_name>` namespace.
 
 ### **[cpp.no_flag_forking]**
 
-**REQUIREMENT**: C++ preprocessing must produce identical output regardless of compiler flags.
+**Requirement**: C++ preprocessing must produce identical output regardless of compiler flags.
 
 Therefore, feature test macros such as `__cpp_explicit_this_parameter` should
 not be used directly. Instead use the following approach for feature-dependent
@@ -791,4 +848,4 @@ for an example.
 
 ### **[cpp.extension_identifiers]**
 
-**RECOMMENDATION**: For functionality that is not being recommended for standardization, but is an extension provided by the library, its identifiers should be prefixed with `ext_`.
+**Recommendation**: For functionality that is not being recommended for standardization, but is an extension provided by the library, its identifiers should be prefixed with `ext_`.
